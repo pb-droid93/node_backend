@@ -21,6 +21,13 @@ app.get('/youtube',(req,res)=>{
     res.send('<h2> chai or you tube<h2>');
 })
 
+app.get('/github',(req,res)=>{
+    res.json({"nmae":"pappu bahadur",
+        "age":"30",
+        "dob":"12-10-1993"
+    })
+})
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
